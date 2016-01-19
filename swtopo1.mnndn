@@ -1,0 +1,64 @@
+{
+    "hosts": [
+        {
+            "number": "1",
+            "opts": {
+                "hostname": "h1",
+                "nodeNum": 1,
+                "sched": "host"
+            },
+            "x": "210.0",
+            "y": "104.0"
+        },
+        {
+            "number": "3",
+            "opts": {
+                "hostname": "h3",
+                "nodeNum": 3,
+                "sched": "host"
+            },
+            "x": "135.0",
+            "y": "231.0"
+        },
+        {
+            "number": "2",
+            "opts": {
+                "hostname": "h2",
+                "nodeNum": 2,
+                "sched": "host"
+            },
+            "x": "294.0",
+            "y": "240.0"
+        }
+    ],
+    "links": [
+        {
+            "dest": "h1",
+            "opts": {},
+            "src": "h3"
+        },
+        {
+            "dest": "h2",
+            "opts": {},
+            "src": "h1"
+        },
+        {
+            "dest": "s1",
+            "opts": {},
+            "src": "h2"
+        }
+    ],
+    "routers": [],
+    "switches": [
+        {
+            "number": "1",
+            "opts": {
+                "hostname": "s1",
+                "nodeNum": 1
+            },
+            "x": "373.0",
+            "y": "105.0"
+        }
+    ],
+    "version": "2"
+}
